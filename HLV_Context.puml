@@ -157,7 +157,7 @@ queue "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $tag
 !endprocedure
 
 !unquoted procedure Service($alias, $label, $descr="", $sprite="", $tags="", $link="")
-class "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $tags) as $alias $getLink($link)
+object "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $tags) as $alias $getLink($link)
 !endprocedure
 
 ' Boundaries
