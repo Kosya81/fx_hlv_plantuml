@@ -156,6 +156,10 @@ database "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $
 queue "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $tags) as $alias $getLink($link)
 !endprocedure
 
+!unquoted procedure Service($alias, $label, $descr="", $sprite="", $tags="", $link="")
+class "$getSystem($label, $descr, $sprite)$getProps()" $toStereos("system", $tags) as $alias $getLink($link)
+!endprocedure
+
 ' Boundaries
 ' ##################################
 
